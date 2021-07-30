@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/bootstrap.min.css">
+    <link rel="stylesheet" href="estilo/style.css">
+    <title>Listagem</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Jogo "Descubra a Palavra"</h1>
+
+                <a href="index.html" target="_self" rel="prev" class="btn btn-primary">Cadastrar Palavras</a>
+                <a href="pag002.html" target="_self" class="btn btn-success">Listar Palavras</a>
+                <a href="pag003.html" target="_self" rel="next" class="btn btn-danger">Iniciar Jogo</a>
+
+                <div class="row">
+                    <div class="col-sm-9">
+                        <h2>Listagem das Palavras</h2>
+                    </div>
+                    <div class="col-sm-3">
+                        <input type="checkbox" name="" id="ckMostrar" class="margemSup"> Mostrar Palavras
+                    </div>
+                </div>
+                <table class="table table-striped" id="tbPalavras">
+                    <tr>
+                        <th>Palavra</th>
+                        <th>Dica</th>
+
+                        <th>
+                            <label>
+                                <input type="checkbox" name="" id="ckTodos"> Todos
+                        </th>
+                    </tr>
+                </table>
+
+                <p class="aDireit">
+                    <input type="button" value="Excluir Selecionados" id="btExcluir" class="btn btn-danger oculta">
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="js/ex10_3lista.js"></script>
+</body>
+</html>
