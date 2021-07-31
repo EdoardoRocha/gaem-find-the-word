@@ -4,30 +4,34 @@ function cadastrarPalavra() {
 
     var palavra = inPalavra.value
     var dica = inDica.value
+    
 
     if(palavra == "" || dica == "" || palavra.indexOf(" ") >= 0) {
         alert("Informe uma palavra válida (Sem espaços) e sua dica correspondente")
         inPalavra.focus()
         return
     }
+   
+    
 
-    if(localStorage.getItem("jogoPalavra")) {
-        localStorage.setItem("jogoPalavra",localStorage.getItem("jogoPalavra") + ";" + palavra)
-        localStorage.setItem("jogoDica", localStorage.getItem("jogoDica") + ";" + dica)
-    } else {
-        localStorage.setItem("jogoPalavra",palavra)
-        localStorage.setItem("jogoDica",dica)
-    }
+        if(localStorage.getItem("jogoPalavra")) {
+            localStorage.setItem("jogoPalavra",localStorage.getItem("jogoPalavra") + ";" + palavra)
+            localStorage.setItem("jogoDica", localStorage.getItem("jogoDica") + ";" + dica)
+        } else {
+            
+            localStorage.setItem("jogoPalavra",palavra)
+            localStorage.setItem("jogoDica",dica)
+        }
+        
+        if(localStorage.getItem("jogoPalavra")) {
+            alert("OK! Palava " + palavra + " Cadastrada com sucesso")
+        }
+        
+        inPalavra.value = ""
+        inDica.value = ""
+        inPalavra.focus()
 
-
-    if(localStorage.getItem("jogoPalavra")) {
-        alert("OK! Palava " + palavra + " Cadastrada com sucesso")
-    }
-
-    inPalavra.value = ""
-    inDica.value = ""
-    inPalavra.focus()
-
+    
 }
 var btCadastrar = document.getElementById("btCadastrar")
 btCadastrar.addEventListener("click", cadastrarPalavra)
