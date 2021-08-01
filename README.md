@@ -4,6 +4,7 @@
  
  <p align="center"> 
  <img width="460" height="300" src="img/assets/palavra.gif">
+ <img width="200" height="300" src="img/assets/gifcll.gif">
  </p>
  
  
