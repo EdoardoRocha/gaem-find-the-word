@@ -23,7 +23,7 @@
 
 ## What does this algorithm consist of?
 
-This program was made for places with large audiences such as theaters, cinemas and even operas. It will help the customer save their seat for the show.
+This game was made entirely with JavaScript, HTML5 and CSS3(With bootstrap). Let's go right? this game is really cool and the way it was made is even better, don't you think? not to mention that the game is fully responsive don't worry about opening it on a small cell phone or 4k monitor everyone will have the same experience.
 
 ## Technologies used
 
