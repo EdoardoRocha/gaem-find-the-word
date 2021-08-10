@@ -32,8 +32,8 @@ This game was made entirely with JavaScript, HTML5 and CSS3(With bootstrap). Let
  <tr>
   <td>JavaScript</td>
   <td>HTML</td>
-  <td>CSS</td>
-  <td>Bootstrap</td>
+  <td>CSS <img src="img/assets/css3-original.svg"></td>
+  <td>Bootstrap <img src="img/assets/bootstrap-plain.svg"></td>
  </tr>
  <tr> 
   <td> ECMAS v8.0</td>
